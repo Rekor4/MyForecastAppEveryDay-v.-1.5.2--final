@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forecast App</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="DefaultScreen()">
+    <center>
+    <h1>Forecast App</h1>
+     </center>
+    <div class>
+            <p id="inputContainer"><input type="text" id="cityInput" placeholder="Search city "></p>
+            <button type="button" id="searchButton" onclick="GetInfo() ">Search</button>
+            <button type="button" id="localStorageButton" onclick="ShowLastSearch()">Last searches</button>
+    </div>
+    <div id="weatherContainer">
+        <div id="iconsContainer">
+            <div class="icons">
+                <p class="weather" id="day1"></p>
+                <div class="image"><img class="imgClass" id="img1"></div>
+                <p class="description" id="descr1">description</p>
+                <p class="minValues" id="day1Min">Loading...</p>
+                <p class="maxValues" id="day1Max">Loading...</p>
+                </div>
+            <div class="icons">
+                <p class="weather" id="day2"></p>
+                <div class="image"><img  class="imgClass" id="img2"></div>
+                <p class="description" id="descr2">description</p>
+                <p class="minValues" id="day2Min">Loading...</p>
+                <p class="maxValues" id="day2Max">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day3"></p>
+                <div class="image"><img class="imgClass" id="img3"></div>
+                <p class="description" id="descr3">description</p>
+                <p class="minValues" id="day3Min">Loading...</p>
+                <p class="maxValues" id="day3Max">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day4"></p>
+                <div class="image"><img class="imgClass" id="img4"></div>
+                <p class="description" id="descr4">description</p>
+                <p class="minValues" id="day4Min">Loading...</p>
+                <p class="maxValues" id="day4Max">Loading...</p>
+            </div>
+            <div class="icons">
+                <p class="weather" id="day5"></p>
+                <div class="image"><img class="imgClass" id="img5"></div>
+                <p class="description" id="descr5">description</p>
+                <p class="minValues" id="day5Min">Loading...</p>
+                <p class="maxValues" id="day5Max">Loading...</p>
+            </div>
+            </div>
+        <div class="container">
+            <div class="wrapper row justify-content-center">
+
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup_body">
+                    <div class="popup_content">
+                            <button id="closeButton" type="button" class="popup_close">X</button>
+                            <div class="popup_title">Last searches </div>
+                            <div class="popup_text"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+body {
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1920x1080/?landscape');
+    font-size: 120%;
+    color: royalblue;
+
+}
+#cityInput, #cityName, #inputContainer{
+    margin: 3px;
+    padding:5px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    /*border-radius: 20px;*/
+}
+/** {box-sizing: border-box;}*/
+/*body{margin: 0;}*/
+/*div {padding: 5px 0}*/
+/*form {*/
+/*    position: relative;*/
+/*    width: 300px;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*.d1 {background: #A3D0C3;}*/
+
+input {
+    font-size: 30px;
+    width: 300px;
+    height: 42px;
+    padding-left: 10px;
+    /*border: 2px solid #7BA7AB;*/
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    /*background: transparent;*/
+    background: rgba(255,255,255,0.5);
+    /*background: #F9F0DA;*/
+    color: black;
+    /*color: #9E9C9C;*/
+}
+/*.d1 button {*/
+/*    position: absolute;*/
+/*    top: 120px;*/
+/*    right: 140px;*/
+/*    width: 42px;*/
+/*    height: 42px;*/
+/*    border: none;*/
+/*    background: #3366CC*/
+/*    background: transparent;*/
+/*    background: #7BA7AB;*/
+/*    background: transparent;*/
+/*    border-radius: 0 5px 5px 0;*/
+/*    cursor: pointer;*/
+/*}*/
+/*.d1 button:before {*/
+/*    content: "\f002";*/
+/*    font-family: FontAwesome;*/
+/*    font-size: 16px;*/
+/*    color: black;*/
+/*}*/
+
+button {
+    margin: 0 auto;
+    display: block;
+    height: 35px;
+    width: 100px;
+    background: #222222;
+    border: 2px solid black;
+    color: aliceblue;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+
+#weatherContainer{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 1300px;
+    border: 5px solid rgba(97, 95, 95, 0.829);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.5);
+}
+#iconsContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 240px;
+    width: 1200px;
+    /*border: 5px solid rgb(31, 82, 82);*/
+    border-radius: 10px;
+}
+.icons{
+    /*display: inline-bock;*/
+    float: left;
+    height: 200px;
+    width: 190px;
+    margin: 20px;
+    border: 5px solid rgb(48, 47, 47);
+    border-radius: 10px;
+}
+.image{
+    /*height: 140px;*/
+    /*width: 100%;*/
+    justify-content: center;
+}
+.imgClass{
+    height: 70px;
+    width: 70px;
+    margin-left: 60px;
+}
+.weather{
+    margin: 5px;
+    /*  background-color: rgb(106, 215, 255); */
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.description {
+    text-align: center;
+}
+.minValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.maxValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.popup_open {
+    display: block;
+}
+
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.popup_body {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+     /*align-items: center;*/
+    /*margin-right:  1000px;*/
+     justify-content: center;
+     /*padding: 30px 10px;*/
+}
+
+.popup_content {
+    background-color: #fff;
+    color: black;
+    max-width: 800px;
+    padding: 30px;
+    position: relative;
+    /* bottom: 300px;
+    right: 10px;
+    padding-right: px; */
+
+}
+
+.popup_title {
+    font-size: 50px;
+    margin: 0px 1em 0px;
+}
+.popup_close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    width: 50px;
+    cursor: pointer;
+}
+
+.popup_closeButton {
+    display: none;
+}
+
+
+
+
+

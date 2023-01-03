@@ -8,7 +8,8 @@ function GetInfo() {
     const newCityName = document.getElementById('cityInput');
     let a = 0;
 
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${newCityName.value}&appid=16bf99a8ab616d1c4cda345fcef86dbf`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${newCityName.value}
+    &appid=YOUR_API`)
         .then((response) => response.json())
         .then((data) => {
             for (i = 0, a = 0; i < 40 && a < 5; i += 8, a++) {
